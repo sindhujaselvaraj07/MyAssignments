@@ -18,7 +18,7 @@ test.only('Assignment4', async({page})=>{
 await page.goto("https://ford-f1-dev-ed.develop.my.salesforce.com");
 await page.waitForTimeout(3000); 
 await page.locator(`#username`).fill('sindhujas@testleaf.com');
-await page.fill("#password", "MyJob@1993!");
+await page.fill("#password", "***");
 await page.waitForTimeout(3000); 
 await page.click("#Login");
 console.log(await page.title());
@@ -59,4 +59,5 @@ expect('Sindhuja S').toBe(textDisplayed); */
 })  
 
 /* await page.selectOption(".ui-selectonemenu",{index:1});
+
 await page.selectOption(".ui-selectonemenu",{label:"Playwright"}); / */
