@@ -70,7 +70,7 @@ test.only('Salesforce', async({page})=>{
 await page.goto("https://ford-f1-dev-ed.develop.my.salesforce.com");
 await page.waitForTimeout(3000); 
 await page.locator(`#username`).fill('sindhujas@testleaf.com');
-await page.fill("#password", "MyJob@1993!");
+await page.fill("#password", "****");
 await page.waitForTimeout(3000); 
 await page.click("#Login");
 console.log(await page.title());
@@ -104,4 +104,5 @@ await page.getByPlaceholder("First Name").fill("Sindhuja");
     await page.waitForTimeout(3000); 
     await page.click("//button[@class='slds-button slds-button_brand']");
 })  
+
 
