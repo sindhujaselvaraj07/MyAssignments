@@ -19,7 +19,7 @@ test('Salesforce', async({page, context})=>{
     await page.goto("https://login.salesforce.com/");
     await page.waitForTimeout(3000); 
     await page.locator("//input[@id='username']").fill("sindhujas@testleaf.com")
-    await page.locator("//input[@id='password']").fill("MyJob@1993!");
+    await page.locator("//input[@id='password']").fill("***");
     await page.waitForTimeout(3000); 
     await page.locator("//input[@id='Login']").click();  
     const pagePromise = context.waitForEvent('page');
@@ -32,5 +32,6 @@ test('Salesforce', async({page, context})=>{
    await newPage1.locator("//button[@class='slds-button slds-button_brand']").click();
    await newPage1.waitForLoadState();
    await expect(newPage1).toHaveTitle("Create and Publish Custom-Branded Mobile Apps - Salesforce.com");
+
 
 })
