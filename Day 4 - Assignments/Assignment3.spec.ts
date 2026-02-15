@@ -17,7 +17,7 @@ test.only('Assignment3', async({page})=>{
 await page.goto("https://ford-f1-dev-ed.develop.my.salesforce.com");
 await page.waitForTimeout(3000); 
 await page.locator(`#username`).fill('sindhujas@testleaf.com');
-await page.fill("#password", "MyJob@1993!");
+await page.fill("#password", "***");
 await page.waitForTimeout(3000); 
 await page.click("#Login");
 console.log(await page.title());
@@ -46,5 +46,6 @@ await expect(locator).toHaveText('Sindhuja S');
     console.log(textDisplayed);
     expect('Test message').toBe(textDisplayed); 
 await expect(locator).toHaveText('Sindhuja S');   */ 
+
 
 })  
